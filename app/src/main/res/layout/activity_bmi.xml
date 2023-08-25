@@ -6,7 +6,9 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".BmiActivity"
 android:orientation="vertical"
-android:gravity="center_vertical">
+android:gravity="top"
+android:paddingVertical="50dp"
+    >
 
     <TextView
         android:layout_width="match_parent"
@@ -72,14 +74,16 @@ android:gravity="center_vertical">
                 android:text="@string/toast"
                 android:layout_weight="0.5"
                 android:layout_marginHorizontal="@dimen/_16dp"
-                android:id="@+id/btn_toast"/>
+                android:id="@+id/btn_toast"
+                style="?android:attr/buttonBarButtonStyle" />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/hitung"
                 android:layout_weight="0.5"
                 android:layout_marginHorizontal="@dimen/_16dp"
-                android:id="@+id/btn_hitung"/>
+                android:id="@+id/btn_hitung"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 
