@@ -15,4 +15,6 @@
     <string name="tinggi_badan">Tinggi Badan</string>
     <string name="masukkan_tinggi_badan">Masukkan Tinggi Badan (Cm)</string>
     <string name="keterangan">Keterangan</string>
+    <string name="description">Versions: SM-S901B, SM-S901B/DS (International); SM-S901U (USA); SM-S901U1 (USA unlocked); SM-S901W (Canada); SM-S901N (Korea); SM-S9010 (China); SM-S901E (Asia/Africa)</string>
+    <string name="label_camera">50 MP, f/1.8, 23mm (wide), 1/1.56</string>
 </resources>
