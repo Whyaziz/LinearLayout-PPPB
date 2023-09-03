@@ -17,4 +17,23 @@
     <string name="keterangan">Keterangan</string>
     <string name="description">Versions: SM-S901B, SM-S901B/DS (International); SM-S901U (USA); SM-S901U1 (USA unlocked); SM-S901W (Canada); SM-S901N (Korea); SM-S9010 (China); SM-S901E (Asia/Africa)</string>
     <string name="label_camera">50 MP, f/1.8, 23mm (wide), 1/1.56</string>
+    <string name="_0">0</string>
+    <string name="c">C</string>
+    <string name="del">DEL</string>
+    <string name="modulo">%</string>
+    <string name="per">/</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="x">x</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="min">-</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="plus">+</string>
+    <string name="comma">,</string>
+    <string name="equals">=</string>
 </resources>
