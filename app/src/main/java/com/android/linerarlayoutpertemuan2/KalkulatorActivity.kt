@@ -83,16 +83,22 @@ class KalkulatorActivity : AppCompatActivity() {
             clear.setOnClickListener{
                 textInput.setText("")
                 hasilHitung = 0.0
+                operator.text = ""
                 textHasil.visibility = View.GONE
             }
 
             buttonPlus.setOnClickListener{
 
-                when(operatorVar){
-                    "+" -> hasilHitung += textInput.text.toString().toDouble()
-                    "-" -> hasilHitung -= textInput.text.toString().toDouble()
-                    "/" -> hasilHitung /= textInput.text.toString().toDouble()
-                    "*" -> hasilHitung *= textInput.text.toString().toDouble()
+                try{
+                    when(operatorVar){
+                        "+" -> hasilHitung += textInput.text.toString().toDouble()
+                        "-" -> hasilHitung -= textInput.text.toString().toDouble()
+                        "/" -> hasilHitung /= textInput.text.toString().toDouble()
+                        "*" -> hasilHitung *= textInput.text.toString().toDouble()
+                    }
+                }
+                catch (_: NumberFormatException){
+
                 }
 
                 operator.text = "+"
@@ -104,11 +110,16 @@ class KalkulatorActivity : AppCompatActivity() {
             }
 
             buttonMinus.setOnClickListener{
-                when(operatorVar){
-                    "+" -> hasilHitung += textInput.text.toString().toDouble()
-                    "-" -> hasilHitung -= textInput.text.toString().toDouble()
-                    "/" -> hasilHitung /= textInput.text.toString().toDouble()
-                    "*" -> hasilHitung *= textInput.text.toString().toDouble()
+                try{
+                    when(operatorVar){
+                        "+" -> hasilHitung += textInput.text.toString().toDouble()
+                        "-" -> hasilHitung -= textInput.text.toString().toDouble()
+                        "/" -> hasilHitung /= textInput.text.toString().toDouble()
+                        "*" -> hasilHitung *= textInput.text.toString().toDouble()
+                    }
+                }
+                catch (_: NumberFormatException){
+
                 }
 
                 operator.text = "-"
@@ -120,11 +131,16 @@ class KalkulatorActivity : AppCompatActivity() {
             }
 
             buttonPer.setOnClickListener{
-                when(operatorVar){
-                    "+" -> hasilHitung += textInput.text.toString().toDouble()
-                    "-" -> hasilHitung -= textInput.text.toString().toDouble()
-                    "/" -> hasilHitung /= textInput.text.toString().toDouble()
-                    "*" -> hasilHitung *= textInput.text.toString().toDouble()
+                try{
+                    when(operatorVar){
+                        "+" -> hasilHitung += textInput.text.toString().toDouble()
+                        "-" -> hasilHitung -= textInput.text.toString().toDouble()
+                        "/" -> hasilHitung /= textInput.text.toString().toDouble()
+                        "*" -> hasilHitung *= textInput.text.toString().toDouble()
+                    }
+                }
+                catch (_: NumberFormatException){
+
                 }
 
                 operator.text = "/"
@@ -136,11 +152,16 @@ class KalkulatorActivity : AppCompatActivity() {
             }
 
             buttonTimes.setOnClickListener{
-                when(operatorVar){
-                    "+" -> hasilHitung += textInput.text.toString().toDouble()
-                    "-" -> hasilHitung -= textInput.text.toString().toDouble()
-                    "/" -> hasilHitung /= textInput.text.toString().toDouble()
-                    "*" -> hasilHitung *= textInput.text.toString().toDouble()
+                try{
+                    when(operatorVar){
+                        "+" -> hasilHitung += textInput.text.toString().toDouble()
+                        "-" -> hasilHitung -= textInput.text.toString().toDouble()
+                        "/" -> hasilHitung /= textInput.text.toString().toDouble()
+                        "*" -> hasilHitung *= textInput.text.toString().toDouble()
+                    }
+                }
+                catch (_: NumberFormatException){
+
                 }
 
                 operator.text = "*"
@@ -152,6 +173,19 @@ class KalkulatorActivity : AppCompatActivity() {
             }
 
             buttonEquals.setOnClickListener{
+
+                try{
+                    when(operatorVar){
+                        "+" -> hasilHitung += textInput.text.toString().toDouble()
+                        "-" -> hasilHitung -= textInput.text.toString().toDouble()
+                        "/" -> hasilHitung /= textInput.text.toString().toDouble()
+                        "*" -> hasilHitung *= textInput.text.toString().toDouble()
+                    }
+                }
+                catch (_: NumberFormatException){
+
+                }
+
                 operatorVar = "+"
                 operator.text = ""
 
@@ -160,6 +194,7 @@ class KalkulatorActivity : AppCompatActivity() {
                 hasilHitung = 0.0
 
                 textHasil.visibility = View.GONE
+                textInput.setSelection(textInput.text.length)
             }
 
         }
